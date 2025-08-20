@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallFlow AI - Your Intelligent Sales Development Representative</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern-landing.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Orbs Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="CallFlow AI" class="logo-img">
+                <span class="brand-text">CallFlow AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#pre-book" class="cta-button">Pre-Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up">Transform Your Sales with <span class="gradient-text">CallFlow AI</span></h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Automate outreach, qualify leads, and book meetings 24/7 with our intelligent AI Sales Development Representative</p>
+                <div class="booking-counter" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="counter-icon">🔥</span>
+                    <span class="counter-number" id="bookingCount">80</span>+ businesses already pre-booked
+                </div>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#pre-book" class="primary-button">Get Early Access</a>
+                    <a href="#demo" class="secondary-button">Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section - Completely Separate -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="hero-stats" data-aos="fade-up">
+                <div class="stat">
+                    <h3 class="stat-number" data-target="10">0</h3><span class="stat-suffix">x</span>
+                    <p>Faster Outreach</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="85">0</h3><span class="stat-suffix">%</span>
+                    <p>Response Rate</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">24/7</h3>
+                    <p>Always Working</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Powerful Features for Modern Sales Teams</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">📧</div>
+                    <h3>Smart Email Outreach</h3>
+                    <p>AI-crafted personalized emails that resonate with prospects based on their profile and behavior</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">📞</div>
+                    <h3>Intelligent Voice Calls</h3>
+                    <p>Natural-sounding AI voice calls that handle objections and book meetings automatically</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Lead Qualification</h3>
+                    <p>Automatically score and qualify leads based on engagement and fit criteria</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">📊</div>
+                    <h3>CRM Integration</h3>
+                    <p>Seamlessly integrates with HubSpot, Salesforce, and other popular CRM systems</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Smart Follow-ups</h3>
+                    <p>Automated follow-up sequences that adapt based on prospect responses</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">📈</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Real-time insights into campaign performance and ROI metrics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">How CallFlow AI Works</h2>
+            <div class="animated-timeline">
+                <div class="timeline-line"></div>
+            </div>
+            <div class="steps">
+                <div class="step" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>Upload Your Prospects</h3>
+                    <p>Import your prospect list via CSV or connect your CRM directly</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>AI Personalization</h3>
+                    <p>Our AI researches each prospect and crafts personalized messages</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>Multi-Channel Outreach</h3>
+                    <p>Automatically reach out via email and voice calls at optimal times</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <h3>Handle Responses</h3>
+                    <p>AI engages with responses, answers questions, and books meetings</p>
+                </div>
+                <div class="step" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="step-number">5</div>
+                    <h3>Track & Optimize</h3>
+                    <p>Monitor performance and let AI optimize campaigns for better results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$499<span>/month</span></div>
+                    <ul>
+                        <li>✓ Up to 500 prospects/month</li>
+                        <li>✓ Email outreach</li>
+                        <li>✓ Basic personalization</li>
+                        <li>✓ CRM integration</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="pricing-button">Coming Soon</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="price">$999<span>/month</span></div>
+                    <ul>
+                        <li>✓ Up to 2,000 prospects/month</li>
+                        <li>✓ Email + Voice outreach</li>
+                        <li>✓ Advanced AI personalization</li>
+                        <li>✓ All integrations</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Custom workflows</li>
+                    </ul>
+                    <button class="pricing-button featured">Pre-Book Now</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul>
+                        <li>✓ Unlimited prospects</li>
+                        <li>✓ All channels</li>
+                        <li>✓ White-label option</li>
+                        <li>✓ Dedicated account manager</li>
+                        <li>✓ Custom AI training</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                    <button class="pricing-button">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Book Section -->
+    <section id="pre-book" class="pre-book">
+        <div class="container">
+            <div class="pre-book-content">
+                <h2>🌟 Reserve Your Spot - It's Completely Free!</h2>
+                <p class="special-message">Simply sign up and relax. We'll notify you as soon as CallFlow AI goes live.</p>
+                <div class="no-payment-notice">
+                    <span class="free-tag">✅ No Credit Card Required</span>
+                    <span class="free-tag">✅ No Payment Needed</span>
+                    <span class="free-tag">✅ Zero Commitment</span>
+                    <span class="free-tag">✅ Just Sign Up & We'll Email You</span>
+                </div>
+                <p class="exclusive-note">As a pre-registered member, you'll get exclusive access to features and pricing not available to the public</p>
+                <form id="preBookForm" class="pre-book-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                        <select name="team_size" required>
+                            <option value="">Team Size</option>
+                            <option value="1-5">1-5 people</option>
+                            <option value="6-20">6-20 people</option>
+                            <option value="21-50">21-50 people</option>
+                            <option value="50+">50+ people</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                        <select name="plan" required>
+                            <option value="">Interested Plan</option>
+                            <option value="starter">Starter ($499/mo)</option>
+                            <option value="professional">Professional ($999/mo)</option>
+                            <option value="enterprise">Enterprise (Custom)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Reserve My Spot - It's Free!</button>
+                    <p class="form-note">🔒 100% Free • No Payment Required • We'll Email You When Live</p>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>🎉 Success!</h3>
+                    <p>You're on the list! We'll contact you soon with early access details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="CallFlow AI" class="footer-logo">
+                        <h3>CallFlow AI</h3>
+                    </div>
+                    <p>The future of sales development is here. Automate, personalize, and scale your outreach.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#how-it-works">How It Works</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">support@aisdr.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CallFlow AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/landing.js') }}"></script>
+</body>
+</html>

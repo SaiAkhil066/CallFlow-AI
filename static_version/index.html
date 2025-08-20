@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallFlow AI - Your Intelligent Sales Development Representative</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/modern-landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Orbs Background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="CallFlow AI" class="logo-img">
+                <span class="brand-text">CallFlow AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#pre-book" class="cta-button">Pre-Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+                <h1 class="hero-title" data-aos="fade-up">Transform Your Sales with <span class="gradient-text">CallFlow AI</span></h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Automate outreach, qualify leads, and book meetings 24/7 with our intelligent AI Sales Development Representative</p>
+                <div class="booking-counter" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="counter-icon">🔥</span>
+                    <span class="counter-number" id="bookingCount">87</span>+ businesses already pre-booked
+                </div>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#pre-book" class="primary-button">Get Early Access</a>
+                    <a href="#demo" class="secondary-button">Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="hero-stats" data-aos="fade-up">
+                <div class="stat">
+                    <h3 class="stat-number">10</h3><span class="stat-suffix">x</span>
+                    <p>Faster Outreach</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">85</h3><span class="stat-suffix">%</span>
+                    <p>Response Rate</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number">24/7</h3>
+                    <p>Always Working</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-Book Form (Using Formspree for static hosting) -->
+    <section id="pre-book" class="pre-book">
+        <div class="container">
+            <div class="pre-book-content">
+                <h2>🌟 Reserve Your Spot - It's Completely Free!</h2>
+                <p class="special-message">Simply sign up and relax. We'll notify you as soon as CallFlow AI goes live.</p>
+                <div class="no-payment-notice">
+                    <span class="free-tag">✅ No Credit Card Required</span>
+                    <span class="free-tag">✅ No Payment Needed</span>
+                    <span class="free-tag">✅ Zero Commitment</span>
+                    <span class="free-tag">✅ Just Sign Up & We'll Email You</span>
+                </div>
+                <p class="exclusive-note">As a pre-registered member, you'll get exclusive access to features and pricing not available to the public</p>
+                
+                <!-- Formspree form for static hosting -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="pre-book-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                        <select name="team_size" required>
+                            <option value="">Team Size</option>
+                            <option value="1-5">1-5 people</option>
+                            <option value="6-20">6-20 people</option>
+                            <option value="21-50">21-50 people</option>
+                            <option value="50+">50+ people</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                        <select name="plan" required>
+                            <option value="">Interested Plan</option>
+                            <option value="starter">Starter ($499/mo)</option>
+                            <option value="professional">Professional ($999/mo)</option>
+                            <option value="enterprise">Enterprise (Custom)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Reserve My Spot - It's Free!</button>
+                    <p class="form-note">🔒 100% Free • No Payment Required • We'll Email You When Live</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: false,
+            mirror: true,
+            offset: 100
+        });
+
+        // Simple counter animation
+        let count = 87;
+        setInterval(() => {
+            if(Math.random() > 0.7) {
+                count++;
+                document.getElementById('bookingCount').textContent = count;
+            }
+        }, 10000);
+    </script>
+</body>
+</html>
