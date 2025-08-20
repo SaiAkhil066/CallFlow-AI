@@ -5,8 +5,7 @@
       "src": "landing_app_vercel.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
+        "maxLambdaSize": "15mb"
       }
     }
   ],
@@ -19,10 +18,5 @@
       "src": "/(.*)",
       "dest": "landing_app_vercel.py"
     }
-  ],
-  "functions": {
-    "landing_app_vercel.py": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }
