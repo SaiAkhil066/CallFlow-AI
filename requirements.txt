@@ -1,3 +1,27 @@
-Flask==2.3.2
-pandas==2.0.3
-openpyxl==3.1.2
+pandas
+requests
+python-dotenv
+phonenumbers
+retrying
+openpyxl # For Excel file support
+aiohttp  # For async HTTP requests
+asyncio
+
+# Web UI Dependencies (Flask - Legacy)
+flask
+flask-socketio
+python-socketio
+werkzeug
+
+# Modern API Dependencies
+fastapi
+uvicorn[standard]
+python-multipart
+websockets
+pydantic
+
+# Optional: For enhanced features
+twilio  # Alternative calling provider
+redis  # For caching and rate limiting
+celery # For background task processing
+pydantic  # For better data validation
